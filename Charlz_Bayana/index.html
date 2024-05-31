@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Genetics - Investigating Inheritance and DNA</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url('assets/login_page_bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .form-container {
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        color: azure;
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 50%;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col {
+        flex: 1 0 0%;
+        max-width: 100%;
+    }
+</style>
+
+<body>
+    <div class="col">
+        <div class="row" style="display: flex; justify-content: center;">
+            <h1 style="color:white; text-align: center;">GENETICS <br> INVESTIGATING INHERITANCE AND DNA</h1>
+        </div>
+        <div class="row" style="display: flex; justify-content: center;">
+            <div class="form-container">
+                <form id="geneticsForm">
+                    <h2>SIGN UP HERE</h2>
+                    <label for="name" style="font-weight: bold;">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" autofocus required>
+
+                    <label for="email" style="font-weight: bold;">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password" style="font-weight: bold;">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirmPassword" style="font-weight: bold;">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirm_password" required>
+                    <div class="container" style="display: flex; justify-content: center; ">
+                        <button type="submit" style="font-weight: bold;">SIGN UP</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script>document.getElementById('geneticsForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return;
+            }
+
+            alert(`Thank you, ${fullname}. Your account has been created!`);
+            window.location.href = 'introduction.html';
+        });
+    </script>
+</body>
+
+</html>

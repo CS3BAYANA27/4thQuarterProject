@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Genetics - Investigating Inheritance and DNA</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-image: url('assets/login_page_bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2 {
+        color: #333;
+    }
+
+    .section {
+        margin-top: 20px;
+    }
+
+    .section p,
+    .section ul {
+        color: #666;
+        line-height: 1.6;
+    }
+
+    ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+
+    .text-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        background-color: #007bff;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        float: right;
+    }
+
+    .text-white {
+        color: white;
+    }
+
+    .fw-bold {
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="container" style="text-align: center;">
+        <h1 class="text-center text-white">The Blueprint of Life</h1>
+        <h2 class="text-white">What is DNA?</h2>
+        <p class="text-white fw-bold"> DNA (Deoxyribonucleic Acid) is the molecule that contains the genetic code of
+            organisms. DNA is found in
+            every cell of the body and is essential for the creation of proteins, which perform most of the
+            functions in the body.</p>
+        <img src="assets/dna_structure.png" alt="inheritance image" style="height: 3in;width: 5in;">
+        <h2 class="text-white">Structure of DNA:
+        </h2>
+        <p class="text-white fw-bold"> Double Helix: DNA is shaped like a twisted ladder.</p>
+        <p class="text-white fw-bold">Nucleotides: The building blocks of DNA, consisting of a sugar, a phosphate group,
+            and a nitrogen base
+            (Adenine, Thymine, Cytosine, Guanine).</p>
+        <img src="assets/dna_replication.gif" alt="inheritance image" style="height: 3in;width: 5in;">
+        <h2 class="text-white">DNA Replication and Repair:
+        </h2>
+        <p class="text-white fw-bold">DNA Replication and Repair:
+            DNA replication is the process by which a DNA molecule makes a copy of itself. This is essential for cell
+            division and the maintenance of genetic information.</p>
+        <img src="assets/genetic_mutation.png" alt="inheritance image" style="height: 3in;width: 5in;">
+        <h2 class="text-white">Genetic Mutations:
+        </h2>
+        <p class="text-white fw-bold">Mutations are changes in the DNA sequence that can lead to variations in traits or
+            sometimes cause diseases.
+        </p>
+        <h2 class="text-white">Explore DNA:
+        </h2>
+        <p class="text-white fw-bold" style="display: flex; justify-content: center;">
+            [Video: The Structure of DNA]
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/o_-6JXLYS-k?si=k17I3sSuHfJxbhXF"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="text-white fw-bold">
+            [Interactive: DNA Replication Process]
+        </p>
+        <iframe src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6399103" frameborder="0" width="100%" height="300px"
+            style="border: 1px solid #ccc;"></iframe>
+        <p class="text-white fw-bold">[Case Study: Genetic Mutations and Their Effects]</p>
+        <iframe src="
+        https://evolution.berkeley.edu/dna-and-mutations/the-effects-of-mutations/" frameborder="0"
+            width="100%" height="300px" style="border: 1px solid #ccc;"></iframe>
+        <button id="nextPage">Next</button>
+    </div>
+
+    <script>
+        document.getElementById('nextPage').onclick = function () {
+            window.location.href = 'modern_genetics.html';
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Genetics - Investigating Inheritance and DNA</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url('assets/bg_2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2 {
+        color: white;
+    }
+
+    .section {
+        margin-top: 20px;
+    }
+
+    .section p,
+    .section ul {
+        color: #666;
+        line-height: 1.6;
+    }
+
+    ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+
+    .text-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        background-color: #007bff;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        float: right;
+    }
+</style>
+
+<body>
+    <div class="container" style="text-align: center; ">
+        <h1 class="text-center">Introduction to Genetics</h1>
+        <div class="section" id="what-is-genetics">
+            <h2 style="display: flex; justify-content: center;">What is Genetics?</h2>
+            <p style="color: white; font-weight: bold; text-align: center;">Genetics is the branch of biology that
+                studies heredity and the variation of inherited characteristics.
+                It explains how traits are passed from parents to offspring through genes.</p>
+        </div>
+        <div class="section" id="key-concepts">
+            <h2>Key Concepts</h2>
+            <ul>
+                <p style="color: white"><strong>Genes: Basic units of heredity made up of DNA.</strong></p>
+                <p style="color: white"> <strong>Chromosomes:Structures within cells that contain a person's
+                        genes.</strong></p>
+                <p style="color: white"><strong>DNA:(Deoxyribonucleic Acid): Molecule that carries genetic instructions
+                        used in
+                        growth, development, and reproduction.</strong> </p>
+            </ul>
+        </div>
+        <button id="nextPage">Next</button>
+    </div>
+    <script>
+        document.getElementById('nextPage').onclick = function () {
+            window.location.href = 'understanding_inheritance.html';
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Genetics - Investigating Inheritance and DNA</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-image: url('assets/bg_3.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2 {
+        color: #333;
+    }
+
+    .section {
+        margin-top: 0px;
+    }
+
+    .section p,
+    .section ul {
+        color: #666;
+        line-height: 1.6;
+    }
+
+    ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+
+    .text-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        background-color: #007bff;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        float: right;
+    }
+</style>
+
+<body>
+    <div class="container" style="text-align: center;">
+        <h1 class="text-center" style="color: white;">Understanding Inheritance</h1>
+        <div class="section">
+            <h2 style="color: white; font-weight: bold;">How traits are inherited?</h2>
+            <img src="assets/inheritance.gif" alt="inheritance image" style="height: 4in;width: 5in;">
+            <p style="color: white; font-weight: bold;"> Inheritance is the process by which genetic information is
+                passed on from parents to their offspring.
+                The principles of inheritance were first outlined by Gregor Mendel through his work on pea plants.</p>
+        </div>
+        <div class="section">
+            <img src="assets/mendellian.png" alt="inheritance image" style="height: 3in;width: 5in;">
+            <h2 style="color: white; font-weight: bold;">Mendellian Genetics:</h2>
+            <p style="color: white; font-weight: bold;">Law of Segregation: Each organism contains two alleles for each
+                trait, which segregate during gamete formation.
+
+            </p>
+            <p style="color: white; font-weight: bold;">Law of Independent Assortment: Alleles for different traits are
+                distributed to sex cells (& offspring) independently of one another.</p>
+        </div>
+        <div class="section">
+            <h2 style="color: white; font-weight: bold;">Types of Inheritance:</h2>
+            <p style="color: white; font-weight: bold;">Dominant and Recessive Traits: Dominant traits mask the presence
+                of recessive ones.
+            </p>
+            <p style="color: white; font-weight: bold;">Co-dominance and Incomplete Dominance: Situations where neither
+                allele is dominant.</p>
+            <p style="color: white; font-weight: bold;"> Polygenic Inheritance: Traits controlled by two or more genes.
+            </p>
+        </div>
+        <button id="nextPage">Next</button>
+    </div>
+
+    <script>
+        document.getElementById('nextPage').onclick = function () {
+            window.location.href = 'blueprint.html';
+        };
+    </script>
+</body>
+
+</html>
